@@ -1,0 +1,68 @@
+/* ===== Tampilan dasar ===== */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #222;
+  background-color: #f5f7fa;
+  margin: 0;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+section {
+  background-color: #fff;
+  border: 1px solid #d9e0ea;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+h1 { color: #173f75; }
+h2 { margin-top: 0; font-size: 1.15rem; }
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input {
+  padding: 6px 8px;
+  margin: 4px 0;
+}
+
+button {
+  padding: 6px 14px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+/* ===== Latihan 3: kelas yang di-toggle lewat JavaScript ===== */
+.highlight {
+  color: #173f75;
+  background-color: #e6f1ff;
+  border-left: 4px solid #3478c8;
+  padding: 12px;
+}
+
+.teks-besar {
+  font-size: 1.4rem;
+}
+
+/* ===== Latihan 6: daftar tugas ===== */
+.selesai span {
+  text-decoration: line-through;
+  color: #687386;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+li button {
+  margin: 0 0 0 6px;
+}

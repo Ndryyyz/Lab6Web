@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendaftaran Workshop Web</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <h1>Workshop Web Dasar</h1>
+    <p>Belajar HTML, CSS, dan JavaScript bersama. Isi formulir di bawah untuk mendaftar.</p>
+  </header>
+
+  <main class="layout">
+    <!-- Formulir pendaftaran -->
+    <section class="card" aria-labelledby="judulForm">
+      <h2 id="judulForm">Formulir Pendaftaran</h2>
+
+      <form id="formWorkshop" novalidate>
+        <div class="field">
+          <label for="nama">Nama lengkap</label>
+          <input id="nama" name="nama" type="text" maxlength="40"
+                 autocomplete="name" aria-describedby="errNama">
+          <p class="error" id="errNama"></p>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email"
+                 autocomplete="email" aria-describedby="errEmail">
+          <p class="error" id="errEmail"></p>
+        </div>
+
+        <div class="field">
+          <label for="sesi">Pilihan sesi</label>
+          <select id="sesi" name="sesi" aria-describedby="errSesi infoSesi">
+            <option value="">-- Pilih sesi --</option>
+            <option value="s1">Sesi 1 — HTML dan CSS Dasar (Sabtu, 09.00–11.00)</option>
+            <option value="s2">Sesi 2 — JavaScript DOM dan Event (Sabtu, 13.00–15.00)</option>
+            <option value="s3">Sesi 3 — Mini Project Web (Minggu, 09.00–12.00)</option>
+          </select>
+          <p class="error" id="errSesi"></p>
+          <p class="info-sesi" id="infoSesi" aria-live="polite"></p>
+        </div>
+
+        <div class="field">
+          <label for="catatan">Alasan mengikuti (opsional)</label>
+          <textarea id="catatan" name="catatan" rows="3" maxlength="120"></textarea>
+          <p class="counter">Jumlah karakter: <span id="jumlahCatatan">0</span>/120</p>
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="btn btn-utama">Daftar</button>
+          <button type="button" class="btn btn-sekunder" id="tombolReset">Hapus Input</button>
+        </div>
+      </form>
+
+      <p id="pesanForm" class="pesan-form" role="status" aria-live="polite"></p>
+    </section>
+
+    <!-- Ringkasan input langsung -->
+    <aside class="card" aria-labelledby="judulRingkasan">
+      <h2 id="judulRingkasan">Ringkasan Input</h2>
+      <dl class="ringkasan">
+        <dt>Nama</dt>
+        <dd id="ringNama">-</dd>
+        <dt>Email</dt>
+        <dd id="ringEmail">-</dd>
+        <dt>Sesi</dt>
+        <dd id="ringSesi">-</dd>
+        <dt>Alasan</dt>
+        <dd id="ringCatatan">-</dd>
+      </dl>
+
+      <button type="button" class="btn btn-sekunder" id="tombolInfo"
+              aria-expanded="true" aria-controls="infoWorkshop">Sembunyikan informasi</button>
+      <div id="infoWorkshop" class="info-workshop">
+        <p>Peserta diharapkan membawa laptop dan menginstal Visual Studio Code serta browser modern.
+           Kuota terbatas, jadi daftar sebelum penuh.</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <p>Mini Project — Praktikum 6 Pemrograman Web</p>
+  </footer>
+</body>
+</html>

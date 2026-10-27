@@ -1,0 +1,196 @@
+/* ===== Variabel warna ===== */
+:root {
+  --biru-tua: #173f75;
+  --biru: #3478c8;
+  --biru-muda: #e6f1ff;
+  --abu-teks: #3b4452;
+  --abu-garis: #cfd8e3;
+  --latar: #f5f7fa;
+  --merah: #b3261e;
+  --merah-muda: #fdecea;
+  --hijau: #1b6e3c;
+  --hijau-muda: #e8f5ec;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: var(--abu-teks);
+  background-color: var(--latar);
+}
+
+/* ===== Header dan footer ===== */
+.hero {
+  background-color: var(--biru-tua);
+  color: #fff;
+  padding: 32px 16px;
+  text-align: center;
+}
+.hero h1 { margin: 0 0 8px; font-size: 1.8rem; }
+.hero p { margin: 0 auto; max-width: 520px; }
+
+.footer {
+  text-align: center;
+  padding: 16px;
+  font-size: 0.9rem;
+  color: #687386;
+}
+
+/* ===== Tata letak: 1 kolom di mobile, 2 kolom di desktop ===== */
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+@media (min-width: 800px) {
+  .layout {
+    grid-template-columns: 3fr 2fr;
+    align-items: start;
+  }
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid var(--abu-garis);
+  border-radius: 10px;
+  padding: 20px;
+}
+.card h2 { margin: 0 0 16px; font-size: 1.2rem; color: var(--biru-tua); }
+
+/* ===== Formulir ===== */
+.field { margin-bottom: 16px; }
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  font: inherit;
+  color: inherit;
+  background-color: #fff;
+  border: 1px solid var(--abu-garis);
+  border-radius: 6px;
+}
+
+textarea { resize: vertical; }
+
+input:focus,
+select:focus,
+textarea:focus,
+.btn:focus-visible {
+  outline: 3px solid var(--biru-muda);
+  border-color: var(--biru);
+}
+
+.input-salah {
+  border-color: var(--merah);
+  background-color: var(--merah-muda);
+}
+
+.error {
+  margin: 4px 0 0;
+  min-height: 1.2em;
+  font-size: 0.9rem;
+  color: var(--merah);
+}
+
+.info-sesi {
+  margin: 4px 0 0;
+  font-size: 0.9rem;
+  color: var(--biru-tua);
+}
+
+.counter {
+  margin: 4px 0 0;
+  font-size: 0.9rem;
+  color: #687386;
+}
+
+/* ===== Tombol ===== */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn {
+  min-height: 44px;
+  padding: 10px 18px;
+  font: inherit;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-utama {
+  color: #fff;
+  background-color: var(--biru-tua);
+  border: 1px solid var(--biru-tua);
+}
+.btn-utama:hover { background-color: var(--biru); }
+
+.btn-sekunder {
+  color: var(--biru-tua);
+  background-color: #fff;
+  border: 1px solid var(--biru-tua);
+}
+.btn-sekunder:hover { background-color: var(--biru-muda); }
+
+/* ===== Pesan sukses / gagal ===== */
+.pesan-form {
+  margin: 16px 0 0;
+  padding: 0;
+}
+.pesan-form.sukses,
+.pesan-form.gagal {
+  padding: 12px;
+  border-left: 4px solid;
+  border-radius: 4px;
+}
+.pesan-form.sukses {
+  color: var(--hijau);
+  background-color: var(--hijau-muda);
+  border-color: var(--hijau);
+}
+.pesan-form.gagal {
+  color: var(--merah);
+  background-color: var(--merah-muda);
+  border-color: var(--merah);
+}
+
+/* ===== Ringkasan ===== */
+.ringkasan { margin: 0 0 16px; }
+.ringkasan dt {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #687386;
+}
+.ringkasan dd {
+  margin: 0 0 10px;
+  overflow-wrap: anywhere;
+}
+
+/* ===== Disembunyikan lewat class (Eksperimen G.4) ===== */
+.tersembunyi { display: none; }
+
+.info-workshop {
+  margin-top: 12px;
+  padding: 12px;
+  background-color: var(--biru-muda);
+  border-left: 4px solid var(--biru);
+  border-radius: 4px;
+}
+.info-workshop p { margin: 0; }

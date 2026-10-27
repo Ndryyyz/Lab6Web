@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praktikum DOM dan Event</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1 id="judul">Latihan DOM</h1>
+
+    <!-- Latihan 1 dan 2: mengubah teks dan event click -->
+    <section id="latihan12">
+      <h2>Latihan 1 dan 2 — Mengubah teks dan event click</h2>
+      <p id="pesan">Belum ada tindakan.</p>
+      <button id="tombolAksi" type="button">Klik Saya</button>
+    </section>
+
+    <!-- Latihan 3: classList -->
+    <section id="latihan3">
+      <h2>Latihan 3 — Mengubah kelas dan gaya CSS</h2>
+      <p id="teksGaya">Ini teks yang akan diberi gaya.</p>
+      <button id="tombolGaya" type="button">Ubah Gaya</button>
+    </section>
+
+    <!-- Latihan 4: event input -->
+    <section id="latihan4">
+      <h2>Latihan 4 — Event input dan penghitung karakter</h2>
+      <label for="namaInput">Nama:</label>
+      <input type="text" id="namaInput" maxlength="40">
+      <p>Jumlah karakter: <span id="jumlahKarakter">0</span></p>
+    </section>
+
+    <!-- Latihan 5: validasi form -->
+    <section id="latihan5">
+      <h2>Latihan 5 — Validasi form pendaftaran</h2>
+      <form id="formPendaftaran" novalidate>
+        <label for="nama">Nama lengkap</label>
+        <input id="nama" name="nama" type="text">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email">
+
+        <label for="usia">Usia</label>
+        <input id="usia" name="usia" type="number" min="17" max="100">
+
+        <button type="submit">Daftar</button>
+      </form>
+      <p id="pesanForm" aria-live="polite"></p>
+    </section>
+
+    <!-- Latihan 6: to-do list -->
+    <section id="latihan6">
+      <h2>Latihan 6 — Daftar Tugas</h2>
+      <label for="inputTugas">Tugas baru</label>
+      <input id="inputTugas" type="text">
+      <button id="tambahTugas" type="button">Tambah</button>
+      <p id="pesanTugas" aria-live="polite"></p>
+      <ul id="daftarTugas"></ul>
+    </section>
+  </main>
+</body>
+</html>

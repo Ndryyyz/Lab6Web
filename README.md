@@ -63,13 +63,13 @@ pesan.textContent = "Konten berhasil diubah oleh JavaScript.";
 
 Hasil: judul dan paragraf berubah begitu halaman dibuka.
 
-![Latihan 1](screenshots/01-latihan1-ubah-teks.png)
+![Latihan 1] <img width="900" height="430" alt="01-latihan1-ubah-teks" src="https://github.com/user-attachments/assets/96136463-56df-44f3-80b7-8e525214b881" />
 
 ### Latihan 2 — Event click
 
 Tombol diberi `addEventListener("click", ...)`. Setiap kali diklik, paragraf menampilkan jam saat tombol ditekan.
 
-![Latihan 2](screenshots/02-latihan2-event-click.png)
+![Latihan 2] <img width="900" height="430" alt="02-latihan2-event-click" src="https://github.com/user-attachments/assets/5744d1dc-9381-4903-b61a-1b8629822c9c" />
 
 ### Latihan 3 — Mengubah kelas dan gaya CSS
 
@@ -83,7 +83,7 @@ Perbedaan tiga method `classList`:
 | `remove("x")` | Menghapus kelas `x`. Kalau tidak ada, tidak terjadi apa-apa. |
 | `toggle("x")` | Menambahkan kelas jika belum ada, menghapusnya jika sudah ada. |
 
-![Latihan 3](screenshots/03-latihan3-classlist-aktif.png)
+![Latihan 3] <img width="720" height="204" alt="03-latihan3-classlist-aktif" src="https://github.com/user-attachments/assets/13cb6776-b401-4c11-8e01-883ff5471ed8" />
 
 ### Latihan 4 — Event input dan penghitung karakter
 
@@ -91,7 +91,8 @@ Event `input` aktif setiap kali isi kolom berubah (mengetik, menghapus, atau men
 
 Pengujian: mengetik nama 29 karakter menghasilkan angka 29, mengetik 50 karakter berhenti di 40, dan menghapus seluruh isi mengembalikan angka ke 0.
 
-![Latihan 4](screenshots/04-latihan4-penghitung-karakter.png)
+![Latihan 4] <img width="720" height="196" alt="04-latihan4-penghitung-karakter" src="https://github.com/user-attachments/assets/05c29cdc-f120-4df8-87cb-2c9f26583980" />
+
 
 ### Latihan 5 — Validasi form pendaftaran
 
@@ -101,17 +102,20 @@ Lima kondisi yang diuji:
 
 | No | Kondisi | Pesan yang tampil | Screenshot |
 |---|---|---|---|
-| a | Semua kosong | Nama wajib diisi. | ![a](screenshots/05a-latihan5-semua-kosong.png) |
-| b | Nama kosong (email dan usia valid) | Nama wajib diisi. | ![b](screenshots/05b-latihan5-nama-kosong.png) |
-| c | Email tidak valid (`ndry@`) | Masukkan email yang valid. | ![c](screenshots/05c-latihan5-email-tidak-valid.png) |
-| d | Usia di bawah 17 (`16`) | Usia harus berupa bilangan bulat 17–100. | ![d](screenshots/05d-latihan5-usia-di-bawah-17.png) |
-| e | Semua valid | Validasi berhasil. Form siap diproses. | ![e](screenshots/05e-latihan5-semua-valid.png) |
+| a | Semua kosong | Nama wajib diisi. ![a] <img width="720" height="347" alt="05a-latihan5-semua-kosong" src="https://github.com/user-attachments/assets/bfa65525-cf7c-4dd1-9029-74ecf6a013bf" />
+| b | Nama kosong (email dan usia valid) | Nama wajib diisi. ![b] <img width="720" height="347" alt="05b-latihan5-nama-kosong" src="https://github.com/user-attachments/assets/ed69de73-e960-411c-9aaa-cfc489109b28" />
+| c | Email tidak valid (`ndry@`) | Masukkan email yang valid. ![c] <img width="720" height="347" alt="05c-latihan5-email-tidak-valid" src="https://github.com/user-attachments/assets/7124db0c-5bc5-4e59-8199-c8791cf8fd31" />
+
+| d | Usia di bawah 17 (`16`) | Usia harus berupa bilangan bulat 17–100. ![d] <img width="720" height="347" alt="05d-latihan5-usia-di-bawah-17" src="https://github.com/user-attachments/assets/0af34290-e142-4f27-81be-4a01382340f6" />
+
+| e | Semua valid | Validasi berhasil. Form siap diproses. ![e] <img width="720" height="347" alt="05e-latihan5-semua-valid" src="https://github.com/user-attachments/assets/79b8bcf6-38d2-4fa8-9ce2-4ebcce5219f2" />
+
 
 ### Latihan 6 — Daftar tugas sederhana (To-do List)
 
 Elemen `<li>`, `<span>`, dan `<button>` dibuat lewat `document.createElement()`, lalu dipasang ke daftar dengan `append()` dan `appendChild()`. Teks tugas dimasukkan dengan `textContent`, jadi kalau pengguna mengetik `<b>Uji teks HTML</b>`, yang tampil adalah teks apa adanya dan bukan huruf tebal.
 
-![Latihan 6 - tandai selesai](screenshots/06a-latihan6-todo-tandai-selesai.png)
+![Latihan 6 - tandai selesai] <img width="720" height="326" alt="06a-latihan6-todo-tandai-selesai" src="https://github.com/user-attachments/assets/ce40910a-d408-4f11-aa43-1befb650fb67" />
 
 ## 5. Mini Project — Form Pendaftaran Workshop
 
@@ -138,19 +142,26 @@ Catatan: nama sesi, jadwal, dan teks informasi workshop adalah contoh isian. Bis
 
 | Tampilan awal | Semua kosong lalu Daftar |
 |---|---|
-| ![awal](screenshots/07-miniproject-tampilan-awal.png) | ![kosong](screenshots/08-miniproject-semua-kosong.png) |
+| ![awal] <img width="1100" height="942" alt="07-miniproject-tampilan-awal" src="https://github.com/user-attachments/assets/c9517728-1562-49c8-9f0f-f44cb2b387e1" />
+ | ![kosong] <img width="1100" height="1003" alt="08-miniproject-semua-kosong" src="https://github.com/user-attachments/assets/f8a7dda9-b56b-44ae-b2dc-c316d93204aa" />
+ |
 
 | Nama terlalu pendek dan email salah | Input terisi dan ringkasan langsung |
 |---|---|
-| ![pendek](screenshots/09-miniproject-nama-pendek-email-salah.png) | ![terisi](screenshots/10-miniproject-input-terisi-ringkasan.png) |
+| ![pendek] <img width="1100" height="1003" alt="09-miniproject-nama-pendek-email-salah" src="https://github.com/user-attachments/assets/b4e879f6-bd44-4666-aba8-d0f4d02fcb1a" />
+ | ![terisi] <img width="1100" height="967" alt="10-miniproject-input-terisi-ringkasan" src="https://github.com/user-attachments/assets/f7e96d40-fc89-47dc-8778-c38c63c8878a" />
+ |
 
 | Pendaftaran berhasil | Informasi disembunyikan |
 |---|---|
-| ![berhasil](screenshots/11-miniproject-pendaftaran-berhasil.png) | ![sembunyi](screenshots/12-miniproject-info-disembunyikan.png) |
+| ![berhasil] <img width="1100" height="967" alt="10-miniproject-input-terisi-ringkasan" src="https://github.com/user-attachments/assets/546473db-bd1f-40f1-85e4-99256a31f983" />
+ | ![sembunyi] <img width="1100" height="942" alt="12-miniproject-info-disembunyikan" src="https://github.com/user-attachments/assets/5e24f6a6-10b7-4e5d-b41c-9e44bc056f42" />
+ |
 
 Tampilan di layar mobile (lebar 390 px, tanpa scroll horizontal):
 
-![mobile](screenshots/13-miniproject-tampilan-mobile.png)
+![mobile] <img width="390" height="1521" alt="13-miniproject-tampilan-mobile" src="https://github.com/user-attachments/assets/ee64885e-1c99-4858-abd2-3a3767a0fc10" />
+
 
 ## 6. Eksperimen Mandiri
 
@@ -168,7 +179,9 @@ Script yang sama (`eksperimen/script.js`) dimuat di dua halaman. Isinya mengambi
 
 | `tanpa-defer.html` | `dengan-defer.html` |
 |---|---|
-| ![tanpa defer](screenshots/14-eksperimen-tanpa-defer.png) | ![dengan defer](screenshots/15-eksperimen-dengan-defer.png) |
+| ![tanpa defer] <img width="700" height="220" alt="14-eksperimen-tanpa-defer" src="https://github.com/user-attachments/assets/30446023-ec33-4c64-98c3-b7796f31a631" />
+ | ![dengan defer] <img width="700" height="220" alt="15-eksperimen-dengan-defer" src="https://github.com/user-attachments/assets/73fb1cfc-9645-46b6-a97f-9d05a71ecfa9" />
+ |
 
 **Yang teramati:** pada halaman tanpa `defer`, judul tidak berubah dan Console menampilkan error:
 
